@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <link rel="stylesheet" href="css/bootstrap.css">
+          <link rel="stylesheet" href="libs/sweetAlert/dist/sweetalert2.css">
+          <link rel="stylesheet" href="libs/fontawesome/css/all.css">
+          
+          <title>E-comanda</title>
+     </head>
+
+     <body class="bg-primary">
+          <div class="container">
+               <div class="row justify-content-center">
+                    <div class="col-12 col-sm-8 col-md-4 col-lg-3">
+                         <div class="card shadow mt-2 mt-sm-3 mt-md-3 mt-lg">
+
+                              <div class="card-header">
+                                   <div class="text-center">
+                                        Login do Sistema
+                                   </div>
+                              </div>
+
+                              <div class="card-body">
+                                   <form id="form-login">
+                                        <div class="form-group">
+                                             <label>Login:</label>
+                                             <input type="text" name="LOGIN" id="LOGIN" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                             <label>Senha:</label>
+                                             <input type="password" name="SENHA" id="SENHA" class="form-control">
+                                        </div>
+                                   </form>
+                              </div>
+
+                              <div class="card-footer">
+                                   <button class="btn btn-success btn-block btn-login">
+                                        <i class="fa fa-right-to-bracket"></i> Entrar
+                                   </button>
+                              </div>
+
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <script src="js/jquery-3.6.0.js"></script> <!--Primeiro o JS depois o BootStrap-->
+          <script src="js/bootstrap.js"></script>
+          <script src="libs/sweetAlert/dist/sweetalert2.all.js"></script>
+          <!-- Verificação do login -->
+          <script src="src/empresa/controller/login-empresa.js"></script>
+
+     </body>
+</html>

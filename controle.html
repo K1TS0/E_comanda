@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>E-comanda [Painel de Controle]</title>
+
+          <link rel="stylesheet" href="css/bootstrap.css">
+          <link rel="stylesheet" href="libs/sweetAlert/dist/sweetalert2.css">
+          <link rel="stylesheet" href="libs/fontawesome/css/all.css">
+          <link rel="stylesheet" href="libs/DataTables/datatables.css">
+     </head>
+
+     <body>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+               <a class="navbar-brand text-dark">E-comanda</a>
+
+               <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+
+               <div id="my-nav" class="collapse navbar-collapse"> 
+                    <!-- Cada item do menu vai ser uma das tabelas do nosso sistema (ou seja, os itens dentro do src)-->
+                    <ul class="navbar-nav mr-auto">
+                         <li class="nav-item">
+                              <a class="nav-link text-white" href="src/empresa/view/list-empresa.html"><i class="fa-solid fa-building"></i> Empresa</a>
+                         </li>
+
+                         <li class="nav-item">
+                              <a class="nav-link text-white" href="src/pedido/view/list-pedido.html"><i class="fa-solid fa-clipboard-check"></i> Pedido</a>
+                         </li>
+
+                         <li class="nav-item">
+                              <a class="nav-link text-white" href="src/caixa/view/list-caixa.html"><i class="fa-solid fa-sack-dollar"></i> Caixa</a>
+                         </li>
+
+                         <li class="nav-item">
+                              <a class="nav-link text-white" href="src/venda/view/list-venda.html"><i class="fa-solid fa-money-bill-trend-up"></i> Venda</a>
+                         </li>
+
+                         <li class="nav-item">
+                              <a class="nav-link text-white" href="src/cliente/view/list-cliente.html"><i class="fa-solid fa-users"></i> Cliente</a>
+                         </li>
+
+                         <li class="nav-item">
+                              <a class="nav-link text-white" href="src/produto/view/list-produto.html"><i class="fa-solid fa-cart-arrow-down"></i> Produto</a>
+                         </li>
+                    </ul>
+
+                    <a class="text-white btn-logout"><i class="fa-solid fa-right-from-bracket"></i> Sair do sistema</a>
+               </div>
+          </nav>
+
+          <!-- Atualização do conteúdo abaixo porém mantendo a barra de menu acima -->
+
+          <div class="container mt-5" id="content">
+               <div class="row justify-content-center">
+                    <div class="col-12">
+                         <h4 class="text-center text-danger">
+                              Seja bem-vindo ao sistema gerenciador de comandas!
+                         </h4>
+                    </div>
+               </div>
+          </div>
+          
+          <script src="js/jquery-3.6.0.js"></script> <!--Primeiro o JS depois o Bootstrap-->
+          
+          <!-- Bootstraps para agilizar o trabalho -->
+          <script src="js/bootstrap.js"></script>
+          <script src="libs/sweetAlert/dist/sweetalert2.all.js"></script>
+          <script src="libs/DataTables/datatables.js"></script>
+          <!-- Para que mantenha o menu de cima e apenas altere o conteúdo -->
+          <script src="js/menu.js"></script>
+          <!-- Para a validação de login -->
+          <script src="src/empresa/controller/validate-empresa.js"></script>
+          <!-- Para o logout -->
+          <script src="src/empresa/controller/logout-empresa.js"></script>
+     </body>
+</html>
